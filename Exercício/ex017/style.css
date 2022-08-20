@@ -1,0 +1,45 @@
+@charset "UTF-8";
+*{
+    background-attachment: fixed;
+}
+body{
+    background-image: linear-gradient( to bottom, rgb(2, 2, 255), rgb(11, 1, 97) );
+    font-size: 1em ;
+    font-weight: normal;
+    font-style: italic; 
+    /*
+    Medidas Absolutas: cm, mm, in(polegada), px, pt(ponto), pc(paica)
+
+    Medidas Relativas: em (tamanho relativo a uma letra M maiúsculo), ex, rem, vw (% da largura da tela), vh, %    
+
+    Para font-size é recomendado usar: px ou em.
+    Geralmente: 1em=16px
+    font-weight: lighter, normal, bold, bolder
+
+    Shorthand  font
+    -font-style->font-weight->font-size->font-family
+    */
+
+}
+main{
+    background-color: white;
+    box-shadow: 10px 10px 10px rgb(6, 1, 58);
+    width: 600px;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+    
+}
+h1{
+    color: darkblue;
+    font: italic bold 2em 'Courier New', Courier, monospace;
+    
+} 
+h2{
+    color: darkblue;
+    font: italic bold 1.5em 'Courier New', Courier, monospace;
+}
+p{
+    text-align: justify;
+    font: normal normal 1em Arial, Helvetica, sans-serif;
+} 

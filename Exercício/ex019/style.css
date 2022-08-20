@@ -1,0 +1,35 @@
+@charset "UTF-8";
+/*
+Tudo que é id em HTML= # em css
+class em html= . em css
+Quando usar? O id é usado para indicar apenas uma tag, caso você queira selecionar vários use class.
+*/
+body{
+    background-color: #acffd4;
+    font: normal normal 1em Arial;
+}
+h1{
+    color: #165C34;
+}
+#principal{
+    color: #ffffff;
+    text-align: center;
+    font-size: 2em;
+    background-color: green;
+}
+h2{
+    color: #259C59;
+}
+.basico{
+    color: #259C59;
+    font-weight: bold;
+}
+.intermediario{
+    color: #7c9c25;
+}
+.avancado{
+    color: #9c2525;
+}
+.destaque{
+    background-color: #bebe6070;
+}

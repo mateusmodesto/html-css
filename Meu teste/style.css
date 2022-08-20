@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+@font-face {
+    font-family:'Silkscreen',  ;
+    src: url(fontes/Silkscreen-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+*{
+    background-attachment: fixed;
+    height: auto;
+}
+body{
+    background-image: linear-gradient(to bottom, rgb(86, 86, 255), rgb(56, 56, 250));
+    margin:0px;
+}
+
+main{
+    background-color: rgb(255, 255, 255);
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.438);
+    width: 600px;
+    padding:10px;
+    border-radius: 5px;
+    margin: auto;
+}
+header{
+    background-image: linear-gradient(to bottom, rgba(34, 34, 252, 0.418), rgba(34, 34, 252, 0.637));
+    margin: 0px;
+    padding: 10px;
+    outline: 2px groove black;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+   font-family: Arial, Helvetica, sans-serif
+   
+
+}
+h2{
+   color: rgba(2, 73, 89, 0.900);
+   font-family: 'Courier New', Courier, monospace;
+}
+h3{
+    color:rgba(2, 104, 115, 0.900);
+    font-family: 'Courier New', Courier, monospace;
+}
+h4{
+    color: #3CA6A6;
+    font-family: 'Courier New', Courier, monospace;
+}
+h5{
+    color: rgba(60, 166, 166, 0.750);
+    font-family: 'Courier New', Courier, monospace;
+}
+p{
+    text-align: justify;
+    font: normal normal 0.8em 'Libre Baskerville', serif;
+}
+li{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 0.8em;
+}
+.externos{
+    color: blue;
+    text-decoration: none;    
+}
+.externos::before{
+    content: '⇒ ';
+}
+.externos::after{
+    content: ' ⇐';
+}
+.externos:hover{
+    text-decoration: underline;
+}
+.externos:active{
+    color: red;
+}
+.externos:visited{
+    color: red;
+}
+code{
+    font-size: 1.2em;
+}
+div{
+    background-color:rgba(128, 128, 128, 0.479) ;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+div>#principal{
+    background-color: #a693819f;
+    text-align: center;
+    color: white;
+}
+div>.exemplo{
+    display: none;
+}
+div:hover>p{
+    display: none;
+}
+div:hover>.exemplo{
+    display: block;
+}
+div>#texto::before{
+   content: '✞ '; 
+}
+div>#texto{
+    background-color:darkkhaki ;
+    text-align: justify;
+}
+#exemplo{
+    background-color: rgba(0, 0, 255, 0.726);
+    border: 10px solid black;
+    padding: 10px;
+    margin: 0px;
+    outline: 5px groove red ;
+
+    color: white;
+    text-align: center;
+}
+
+

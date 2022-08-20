@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em Html5</title>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Nesse exercício, tente abrir o site em vários dispositivos ou aumente e diminua o tamanho do navegador.</p>
+    <picture>
+        <source media="(max-width: 750px )" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="Imagens/foto-m.png" type="image/png">
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">        
+    </picture>
+    <hr>
+    <h1>Reproduzindo áudio</h1>
+    <p>Aprendendo a colocar áudio. Aproveitando, ouça o podcast a seguir de um professor sobre tecnologia.</p>
+    <audio src="midia/podcast.mp3" controls autoplay></audio> <!--MP3 WAV OGG-->
+    <p>Outra maneira de colocar áudio:</p>
+    <audio preload="metadata" controls>
+        <source src="midia/podcast.mp3" type="audio/mpeg">
+            <p>Infelizmente seu navegador não tem suporte. <a href="midia/podcast.mp3">Clique aqui para instalar o áudio.</a></p>
+    </audio>
+</body>
+</html>

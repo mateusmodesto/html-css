@@ -1,0 +1,25 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&family=Uchen&display=swap');
+body{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 255), rgb(0, 0, 75));
+    background-attachment: fixed;
+    color: black;
+    font-size: 1em;
+}
+main{
+    background-color: white;
+    padding: 10px;
+    width: 750px;
+    border-radius: 10px;
+    margin: auto;
+}
+h1{
+    font-family: 'Oleo Script Swash Caps', cursive;
+    font-weight: normal;
+    text-align: center;
+}
+p{
+    font-family: 'Uchen', serif;   
+    text-align: justify;
+}

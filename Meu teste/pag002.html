@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Teste meu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Esse site é um teste dos meus conhecimentos</h1>
+  </header>
+  <main>
+    <article>
+      <h2>Imagens flexíveis</h2>
+      <p>Como vocês podem ver na segunda página, quando você diminui o seu navagador, a foto também diminui. Mas isso não é tão difícil! Basta você fazer pelo menos 2 imagens com medidas diferentes e colocar no código:</p>
+          <pre>
+              <code>
+      &lt;picture&gt;
+      &lt;source media="(max-width: )" srcset="" type="image/"&gt;
+      &lt;source media="(max-width: )" srcset="" type="image/"&gt;
+      &lt;img src="" alt=""&gt;
+      &lt;/picture&gt;
+              </code>
+          </pre>
+          <p>Se você está se perguntando o porque de vários source, aqui vai a resposta, é pq você coloca a maior imagem no comando <code>img</code> e nos source as variações, as medidas menores.</p>
+    </article>
+
+        <article>
+          <h2>Áudios</h2>
+          <p>Para colocar áudio, você basta ter os áudios em alguns arquivos: MP3, OGG e WAV. Para colocar, basta você usar o código: <code>&lt;audio src="" controls&gt;</code>. <br> Ou você pode colocar de um jeito mais correto, instale os aúdios ou converta-os para os outros tipos que citei a cima e coloque:
+              <pre>
+                  <code>
+              &lt;audio preload="metadata" controls&gt;
+              &lt;source src="midia/podcast.mp3" type="audio/mpeg"&gt;
+              &lt;source src"midia/podcast.ogg" type="audio/ogg"&gt;
+              &lt;source src"midia/podcast.wav" type="audio/wav"&gt;
+              &lt;/audio&gt;
+                  </code>
+              </pre>
+              Exemplo:</p>
+          <audio src="rock (1).mp3" controls></audio>
+        </article>
+
+        <section>
+              <article>
+                <h2>Vídeos</h2>
+                <p>Para colocar vídeos é bem simples. Basta você ter o vídeo hospedado em sua máquina e colocar de uma forma parecida com o áudio:</p>
+                    <pre>
+                    <code>
+                    &lt;video controls&gt;
+                &lt;source src="midia/video3.mp4" type="video/mp4"&gt;
+                &lt;source src="midia/video2.mkv" type="video/mp4"&gt;
+                &lt;source src="midia/video1.webm" type="video/webm"&gt;
+                &lt;source src="midia/video 4.ogv" type="video/ogg"&gt;
+                      &lt;/video&gt;
+                    </code>
+                    </pre>
+                    <p>Essa é a configuração do vídeo a seguir:</p>
+                    <video controls width="400" poster="Gaviota.png">
+                <source src="video/video3.mp4" type="video/mp4">
+                <source src="video/video2.mkv" type="video/mp4">
+                <source src="video/video1.webm" type="video/webm">
+                <source src="video/video 4.ogv" type="video/ogg">
+                <p>Infelizmente seu navegador não tem compatibilidade com a reprodução do vídeo.</p>
+                      </video>
+                      <p>Também tem como colocar uma imagem antes do vídeo, acresecentando: <code>&lt;poster=""&gt;</code> e para diminuir o tamnho, coloca: <code>&lt;width=""&gt;</code>. No final fica: <code>&lt;video controls width="250" poster="Gaviota.png"&gt;</code></p>
+              </article>
+              <article>
+                  <h2>Vídeos externos</h2>
+                  <p>Para colocar um vídeo externo é bem simples, basta você ir até um vídeo, por exmplo no youtube, clicar em compartilhar e incorporar, após isso você vai copiar o código que aparecer</p>
+                  <p>Por exemplo, este é um vídeo do meu canal que acabei criando durante a pandemia.</p>
+                  <iframe width="500" height="315" src="https://www.youtube.com/embed/3NlYLEk7VeQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </article>
+        </section>
+
+        <section>
+          <h2>Estilos de como implementar o CSS</h2>
+          <article>
+            <h3>Estilos inline</h3>
+            <p>No estilo Inline, você deve colocar na própria tag do conteúdo em que você deseja mudar o estilo o código <code>stayle=""</code>. Porém o problema deste jeito é que você terá que fazer isso em todas as tags que você queira mudar, uma por vez.</p>
+          </article>
+          <article>
+            <h3>Estilos Internos</h3>
+            <p>O estilo interno é usado na parte do <code>&lt;body&gt;</code>, onde é adicionado a tag <code>&lt;style&gt;</code> e no meio adicionamos todos os códigos do que queremos mudar, o código body é para mudar normalmente o estilo e tamanho da fonte e para mudar a cor de fundo do site, colocamos h1{} para mudar alguma coisa nos títulos, h2{} nos sub-títulos, assim por diante.</p>
+          </article>
+          <article>
+            <h3>Estilos Externos</h3>
+            <p>Nos estilos externos nós devemos criar um arquivo novo e nele devemos fazer uma coisinha diferente do que estamos acostumados.</p>
+            <p>Primeirante, nos arquivos que temos as páginas com os htmls devemos colocar na parte do body o código: <code>&lt;link:css&gt;</code>. Assim ele vai completar o código e vai aparecer um arquivo, porém vai dar erro, pois você não criou-o. Então após o código ter sido completado, você deve colocar na parte <code>"style.css"</code>clicar Ctrl+botão esquerdo do mouse e assim vai criar um arquivo e nele você deve colocar <code>@charset "UTF-8"</code>; e já pode começar.</p>
+          </article>
+        </section>
+        
+      <section>
+        <h2>CORES</h2>
+        <article>
+          <h3>Psicologia da Cores</h3>
+          <p>As cores têm muita importância, pois segundo estudos foi confirmado que elas mudam sentimentos e emoções. Principalmente quando elas têm harmonização entre si.</p>
+          <h4>Como as cores são representadas?</h4>
+          <p>As cores são representadas por normalmente 6 dígitos: 0 1 2 3 4 5 6 7 8 9 A B C D E F, o F é o número mais alto que é 255. Por exemplo: a cor branca: <code>#ffffff</code>. Sendo os dois primeiros dígitos a cor vermelha, os dois do meio verde, e os dois últimos azul.</p>
+          <p>Assim há 5 formas de colocar no site:</p>
+          <ul type="circle">
+            <code>
+                <li>style="background-color: blue; color: white;"</li>
+                <li>style="background-color: #0000ff; color: #ffffff"</li>
+                <li>style="background-color: rgb(0,0,255); color: rgb(255,255,255)"</li>
+                <li>style="background-color: hsl(240,100%,50%); color: hsl(0,0%,100%)"</li>
+                <li>style="background-color:; color:;" e configurar manualmente a cor</li>
+            </code>
+          </ul>
+        </article>
+        <article>
+          <h3>Harmonia das Cores</h3>
+          <h4>Cores Primárias</h4>
+          <ul>
+            <li>Amarelo</li>
+            <li>Azul</li>
+            <li>Vermelho</li>
+          </ul>
+          <h4>Cores Secundárias</h4>
+          <ul>
+            <li>Verde</li>
+            <li>Laranja</li>
+            <li>Violeta</li>
+          </ul>
+          <h4>Cores Terciárias</h4>
+          <ul>
+            <li>Amarelo-esverdeado</li>
+            <li>Amarelo-alaranjado</li>
+            <li>Vermelho-alaranjado</li>
+            <li>Vermelho-arroxado</li>
+            <li>Azul-arroxado</li>
+            <li>Azul-esverdeado</li>
+          </ul>
+          <h4>Temperaturas das cores</h4>
+          <ul>
+            <li>Cores Frias: lado esquerdo</li>
+            <li>Cores quentes: lado direito</li>
+          </ul>
+          <p>Quando tiver muito conteúdo, como esse site, é melhor usar a cor de fundo branca  e letra preta, pois cansa menos a visão.</p>
+          <p>Cada paleta para criação de site deve ter entre 3 a 5 cores, com excessão do branco e preto.</p>
+          <h4>Cores complementares</h4>
+          <p>São <strong>as cores que têm mais constrates entre si</strong>, ou uma forma mais fácil de explicar, no círculo cromático são as cores opostas. Por exemplo: Violeta e Amarelo, Verde e Vermelho, Azul e Laranja.</p>
+          <h4>Cores Análogas</h4>
+          <p>São <strong>cores que</strong> não têm tanto contraste igual as análogas entre si, porém <strong>há uma harmonia</strong>. Exemplo: Azul-arroxado, Violeta e Vermelho-arroxado</p>
+          <h4>Cores Análogas e uma complementar</h4>
+          <p>É uma mistura entre as últimas duas, sendo três harmonizadas que não tem contraste entre si, mais uma que cria esse esse contraste. Exemplo: Azul-arroxado, Violeta, Vermelho-arroxado e Amarelo.</p>
+          <h4>Cores Análogas Relacionadas</h4>
+          <p>São duas cores com harmonia + uma que é similar porém cria esse contraste. Exemplo: Amarelo, Amarelo-alaranjado e Vermelho-alaranjado.</p>
+          <h5>Cores Intercaladas</h5>
+          <p>São três cores com um contraste um pouco maior do que as análogas relacionadas. Exemplo: Amarelo, Laraja e Vermelho.</p>
+          <h5>Cores Triádicas</h5>
+          <p>A partir de uma cor inicial, pula três cores e vai nessa ordem. Exemplo: Amarelo, Azul e Vermelho.</p>
+          <h5>Cores em quadrado</h5>
+          <p>A partir da cor inicial, você pula duas cores, até que no final, forma um quadrado. Exemplo: Amarelo, Vermelho-alaranjado, Violeta e Azul-esverdeado.</p>
+          <h5>Cores Tetrádicas</h5>
+          <p>Você escolhe duas cores e suas opostas. Exemplo: Verde, Vermelho, Azul e Laranja.</p>
+          <h4>Cores Monocromia</h4>
+          <p>É somente uma cor, porém você altera na luz e na saturação, assim pode criar o famoso degradê. </p>
+          <p>Sites para cores:
+            <a href="https://color.adobe.com/pt/create/color-wheel" target="_blank" rel="external" class="externos">Adobe.com</a> /
+            <a href="https://coolors.co/" target="_blank" rel="external" class="externos">Coolors.co</a>  /
+            <a href="https://paletton.com/" target="_blank" rel="external" class="externos">paletton.com</a></p>
+        </article>
+      </section>
+
+        <section>
+          <h2>Tipografia</h2>
+          <p>A tipografia surgiu no século XV, a partir da criação da prensa mecânica, onde a pessoa colocava as pedras de metal em ordem, sujava-as de tinta após organizar, colocava o papel e prensava, depois de um tempinho tirava e estava pronto, como se fosse uma impressão.</p>
+          <strong>Mas o que é a Tipografia?</strong>
+          <p>Tipografia é o estudo dos tipos de como escrever as letras. Pois, como as cores, as fontes também são imporantantes e expressam emoções e sentimentos.</p>
+          <article>
+            <h3>Anatomia dos Tipos</h3>
+            <p>Anatomia dos Tipos é a composição de cada caractere em uma fonte, onde influencia em sua legibilidade, no tamanho do corpo de texto aser utilizado.</p>
+            <p>O "x" é sempre a base, sendo assim a medida base de todas as letras minúsculas, chamada de: altura-x. Mas a letras "b", "k", "d" acabam passando dessa altura,e o espaço vazado é chamado de ascendente. E as letras "g", "q", "j", tem os vazamentos para baixo, onde é chamados de descendentes.</p>
+            <p>A altura total é chamada de: Corpo</p>
+            <img src="Imagens/Estrutura 1.JPG" alt="Estrutura" width="500px">
+            <h4>Anatomia Geométrica</h4>
+            <img width="500px" src="Imagens/Captura 2.JPG" alt="Anatomia Geométrica">
+            <p>Nem todas as fontes vão ter essas características. Por exemplo, é a serifa.</p>
+            <h4>Anatomia Corporal</h4>
+            <img width="500px" src="Imagens/Captura 3.JPG" alt="Anatomia Corporal">
+          </article>
+          <article>
+            <h3>O que é Glifo?</h3>
+            <p>Glifo é um caractere/letra. Uma fonte é uma família de glifos.</p>
+            <h3>Família Tipográfica</h3>
+            <p>Família Tipográfica é quando há várias formas de representar a mesma letra, porém nem todas as fontes vão ter essa variedade. Por exemplo:</p>
+            <img width="500px" src="Imagens/Família Tipográfica.JPG" alt="Família Tipográfica">
+          </article>
+          <article>
+            <h3>Categoria </h3>
+            <p>As categorias são:</p>
+            <ul>
+              <li>Serifadas (preferência em papel</li>
+              <li>Sans-serif (preferência em tela)</li>
+              <li>Monoespaçadas (todos os grifos têm o mesmo espaço)</li>
+              <li>Handwriting (procura ser mais parecido a escita a mão)</li>
+              <li>Display (mais divertido/mais zuero)</li>
+            </ul>
+          </article>
+          <article>
+            <h3>Tamanho das Fontes</h3>
+            <p>As medidas para fontes são separadas en duas:</p>
+            <h4>Medidas Absolutas</h4>
+            <p>cm, mm, in(polegada), px, pt(ponto), pc(paica)</p>
+            <h4>Medidas Relativas</h4>
+            <p>em (tamanho relativo a uma letra M maiúsculo), ex, rem, vw (% da largura da tela), vh, %</p>
+          </article>
+          <article>
+            <h3>Recomendações</h3>
+            <p>Para font-size é recomendado usar: px ou em. Geralmente 1em=16px</p>
+            <p>Para "font-weigth" usamos: ligther, normal, bold, bolder. Porém nem todas as fontes tem essas variações! </p>
+            <p>Para simplificar os comandos de fontes, usamos: <code>font: (font-style) (font-weigth) (font-size)
+            (font-family); </code>. </p>
+          </article>
+          <article>
+            <h3>Alinhamento</h3>
+            <p>Para alinhamento do texto usamos: <code>text-aling:center/right/left/justify</code>. E para dar um espaço do ínicio dos parágrafos usamos: <code>text-indent: (tamanho do espaço)</code></p>
+          </article>
+        </section>
+
+        <section>
+          <h2>Fontes internas e externas</h2>
+          <article>
+            <h3>Internas</h3>
+            <p>Para as fontes já baixadas, devemos colocar
+              <pre>
+                <code>
+            @font-face {
+              font-family:(nome que você queira dar à sua fonte);
+              src: url(local do arquivo) format(
+              -opentype[otf] ou
+              -truetype[ttf] ou
+              -embedded-opentype ou
+              -truetype-aat[Apple Advenced Typography] ou
+              -svg);
+              font-weight:;
+              font-style:;
+                </code>
+              </pre>
+            </p>
+          </article>
+          <article>
+            <h3>Externas</h3>
+            <p>Para fontes externas, ou seja, da internet, você deve pegar a URL e colocar o nome da fonte na tag que você queira mudar.</p>
+          </article>
+        </section>
+  
+    <section>
+      <h2>Seletores Personalizados</h2>
+      <article>
+        <h3>ID</h3>
+        <p>O id é usado para identificar determinado elemento único. Usamos então: <code>id="(nome)"</code>. E no CSS colocamos: <code>#(nome dado){}</code></p>
+        <h3>CLASS</h3>
+        <p>O "class" é usado para agrupar elementos que tenham características semelhantes. Na HTML é usado como: <code>class="(nome)"</code>. E na CSS é usado como: <code>.(nome dado){}</code> .</p>
+      </article>
+      <article>
+        <h3>Pseudo-class</h3>
+        <p>Pseudo-class é usado para especificar um estado especial de um elemento. Exemplo: <code>:hover, :visited, :active, :checked; :empty; :focus;</code>. Na HTML é usado como: ":"</p>
+      </article>
+      <article>
+        <h3>Pseudo-elementos</h3>
+        <p>Pseudo-elementos é usado para formatar um pedaço específio do elemento referenciado. Os principais elementos usados são: <code>::before; ::after; ::first-letter; ::first-line</code></p>
+      </article>
+      <article>
+        <h3>Children</h3>
+        <p>É usado para indicar o filho imediato de um elemento. Na HTML é usado <code>&lt;div&gt;</code>. E na CSS é usado <code>">"</code>.</p>
+      </article>
+      <div>
+        <p>Passe o mouse aqui!</p>
+        <h3 class="exemplo">Exemplo</h3>
+        <h4 id="principal" class="exemplo">Exemplo de id/class/pseudo-class/elementos</h4>
+        <h4 class="exemplo">id</h4>
+        <p id="texto" class="exemplo">Esse exemplo é usado tudo dos seletores personalizados, caso queria entender melhor abra o desenvolvimento deste site!</p>
+      </div>
+    </section>
+    
+    <section>
+      <h2>Caixas</h2>
+      <p>As caixas são todos elementos visíveis em um site.</p>
+      <article>
+        <h3>Anatomia das caixas</h3>
+        <p>As anatomias das caixas são: height, width, border, padding (espaço entre a borda e o conteúdo), margin (espaço externo) e outline(contorno). Ex:</p>
+        <h1 id="exemplo">Exemplo de caixa.</h1>
+        <p>Como vocês podem ver, a parte em azul é o fundo do conteúdo + o padding. A parte em preto é a borda, a parte em vermelho é o contorno e para fora é a margin. </p>
+        <p>Existe dois tipos de caixa:</p>
+        <ul>
+          <li><mark>Box-Level</mark>: Ocupa a lagura total da tela e quando for iniciar, pula uma linha. Exemplo: h1-h6, p, main, header... </li>
+          <li><mark>Inline-Level</mark>: Ocua a área necessária para o conteúdo e não pula linha. Exemplo: span, code, a, small, strong...</li>
+        </ul>
+      </article>
+      <article>
+        <h3>Como usar?</h3>
+        <p>Para usar as caixas ou melhor dizendo</p>
+      </article>
+    </section>
+    
+    
+    
+    
+    
+      <hr>
+    <button><a href="index.html" target="_self" rel="prev">Volte aqui</a></button>
+    <button><a href="pag003.html" target="_self" rel="next">Avançar</a></button>
+  </main>
+</body>
+</html>
