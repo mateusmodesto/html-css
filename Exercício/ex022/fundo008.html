@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testando Fundo</title>
     <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
         body{
             background-color: blue;
 
@@ -18,7 +22,24 @@
         }
         header > h1{
             text-align: center;
+            margin: 30px;
+            font-size: 2em;
 
+        }
+        header nav>a{
+            color: rgb(51, 86, 87);
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2em;
+            margin: 10px;
+        }
+        a:hover{
+            background-color: rgb(51, 86, 87) ;
+            color: cadetblue;
+            text-decoration: underline;
+            transition-duration: 1s;
+            border-radius: 5px;
+            padding: 5px;
         }
         main{
             width: 600px;
@@ -28,12 +49,23 @@
             left: 50%;
             top: 50%;
             transform: translate(-50%,-50%);
+            border-radius: 5px;
+        }
+        main>h1{
+            margin:5px;
+        }
+        p{
+            text-align: justify;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Testando Posição</h1>
+        <nav>
+            <a href="#">Contato</a>
+            <a href="#">Home</a>
+        </nav>
     </header>
     <main>
         <h1>Olá, Estou testando fundo</h1>
