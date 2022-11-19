@@ -34,6 +34,15 @@
                 <input type="radio" name="sax" id="sxmas"> <label for="sxmas">Masculino</label>
                 <input type="radio" name="sax" id="sxfem"> <label for="sxfem">Feminino</label>
             </p>
+            <p>
+                <label for="ies">Estado:</label>
+                <select name="es" id="ies">
+                    <option value="">...</option>
+                    <option value="Sp">São Paulo </option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="MG">Minas Gerais</option>
+                </select>
+            </p>
         </fieldset>
         <fieldset>
             <legend>Preferições</legend>
@@ -57,6 +66,19 @@
                 <input type="checkbox" name="rap" id="irap"> <label for="irap">Rap</label>
                 <label for="iou">Outro:</label> <input type="text" style="width:75px ;">
             </p>
+
+            <p>
+                <label for="ipro">Profissão que pretende seguir:</label>
+                <input type="text" name="pro" id="ipro" list="iprofi">
+                <datalist id="iprofi">
+                    <option value="T.I">Técnico de Informática</option>
+                    <option value="ENG">Engenharia</option>
+                    <option value="PRO">Professor</option>
+                    <option value="CIE">Cientista</option>
+                    <option value="COA">Coach</option>
+                    <option value="ESC">Escritor</option>
+                </datalist>
+            </p>
         </fieldset>
 
         <fieldset>
@@ -71,8 +93,17 @@
                 <label for="ifo">Foto:</label>
                 
             </p>
+
+            <p>
+                <label for="isat">Satisfação da pesquisa:</label>
+                <input type="range" name="sat" id="isat" min="1" max="5" required>
+            </p>
         </fieldset>
 
+        <p>
+            <label for="ims">Feedback:</label> <br>
+            <textarea name="ms" id="ims" cols="30" rows="10"></textarea>
+        </p>
 
 
 
