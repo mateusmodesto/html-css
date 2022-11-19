@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    <form action="cadastro.php" method="post">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+
+                <input type="text" name="nome" id="inome" required placeholder="Nome Completo">
+            </p>
+            <p>
+                <label for="itel">Telefone:</label>
+                <input type="tel" name="tel" id="itel" placeholder="(dd)xxxx-xxxx"pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required>
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" required placeholder="_________@gmail.com">
+            </p>
+            <p>
+                <label for="idate">Data de Nascimento:</label>
+                <input type="date" name="date" id="idate" required>
+
+            </p>
+            <p>
+               Sexo:
+                <input type="radio" name="sax" id="sxmas"> <label for="sxmas">Masculino</label>
+                <input type="radio" name="sax" id="sxfem"> <label for="sxfem">Feminino</label>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferições</legend>
+            <p>
+                Esportes Favoritos:
+                <input type="checkbox" name="fut" id="ifut"> <label for="ifut">Futebol</label> 
+                <input type="checkbox" name="bas" id="ibas"> <label for="ibas">Basquete</label>
+                <input type="checkbox" name="vol" id="ivol"> <label for="ivol">Vôlei</label>
+                <input type="checkbox" name="nat" id="inat"> <label for="inat">Natação</label>
+                <label for="iou">Outro:</label>
+                <input type="text" name="ou" id="iou" style="width:75px;"> 
+            </p>
+            <p>
+                Gosto musical: 
+                <input type="checkbox" name="funk" id="ifunk"> <label for="ifunk">Funk</label>
+                <input type="checkbox" name="rock" id="irock"> <label for="irock">Rock</label>
+                <input type="checkbox" name="sertanejo" id="isertanejo"> <label for="isertanejo">Sertanejo</label>
+                <input type="checkbox" name="pop" id="ipop"><label for="ipop">Pop</label>
+                <input type="checkbox" name="samba" id="isamba"> <label for="isamba">Samba</label>
+                <input type="checkbox" name="trap" id="itrap"> <label for="itrap">Trap</label>
+                <input type="checkbox" name="rap" id="irap"> <label for="irap">Rap</label>
+                <label for="iou">Outro:</label> <input type="text" style="width:75px ;">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outras questões</legend>
+            <p>
+                <label for="iho">Horário Atual:</label> 
+                <input type="time" name="ho" id="iho">
+            </p>
+            <p>
+                <label for="idu">Duração do questionário</label>
+                <input type="time" name="du" id="idu">
+                <label for="ifo">Foto:</label>
+                
+            </p>
+        </fieldset>
+
+
+
+
+        <p>
+            <input type="submit" value="Enviar" style="width: 75px;">
+        </p>
+    </form>
+</body>
+</html>
